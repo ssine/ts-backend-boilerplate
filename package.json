@@ -1,0 +1,37 @@
+{
+  "name": "ts-backend-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm-watch start",
+    "start": "ts-node src/index.ts server:start",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix"
+  },
+  "author": "ssine",
+  "license": "ISC",
+  "watch": {
+    "start": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "ts,js,json"
+    }
+  },
+  "devDependencies": {
+    "@deepkit/type-compiler": "^1.0.1-alpha.75",
+    "@types/node": "^14.11.2",
+    "gts": "^3.1.1",
+    "npm-watch": "^0.11.0",
+    "ts-node": "^10.9.1",
+    "typescript": "~4.7.0"
+  },
+  "dependencies": {
+    "@deepkit/framework": "^1.0.1-alpha.75",
+    "@deepkit/http": "^1.0.1-alpha.75",
+    "@deepkit/type": "^1.0.1-alpha.75"
+  }
+}
